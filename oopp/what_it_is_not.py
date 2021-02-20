@@ -1,6 +1,7 @@
 from typing import List
 
-from .typing import PresentationTopic
+from .topic_base import PresentationTopic
+from .exceptions import NotRealOopException
 
 
 class WhatItIsNot(PresentationTopic):
@@ -11,8 +12,7 @@ class WhatItIsNot(PresentationTopic):
     to get you to your destination, that part is up to you.
     """
 
-    question: str
-    answers: List[str]
+    rules: str
 
     def examine(self):
 
@@ -31,7 +31,7 @@ class WhatItIsNot(PresentationTopic):
             "Encapsulate Everything",
         ]
 
-        if not self.follow_rules():
+        if self.follow_rules():
             # Because "real developers"...
             raise NotRealOopException()
 

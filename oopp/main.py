@@ -29,7 +29,7 @@ class Presentation:
             WhatItIsNot,
             ShowMeWhatYouMean,
             HowCanILearnMore,
-        ]), NullTopic)
+        ]), NullTopic())
 
 
 if __name__ == "__main__":

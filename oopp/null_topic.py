@@ -1,4 +1,4 @@
-from .typing import PresentationTopic
+from .topic_base import PresentationTopic
 
 
 class NullTopic(PresentationTopic):

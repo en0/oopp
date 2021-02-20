@@ -1,6 +1,6 @@
 from typing import List
 
-from .typing import PresentationTopic
+from .topic_base import PresentationTopic
 
 
 class ShowMeWhatYouMean(PresentationTopic):
@@ -15,7 +15,8 @@ class ShowMeWhatYouMean(PresentationTopic):
     """
 
     worries: str
-    answers: List[str]
+    guidlines: List[str]
+    examples: List[str]
 
     def examine(self):
 
@@ -35,7 +36,7 @@ class ShowMeWhatYouMean(PresentationTopic):
             "examples/log/rpos/log.h"
             "examples/log/arch/serial.h"
             "examples/log/arch/serial_8250.h"
-            "oopp/typing.py",
+            "oopp/topic_base.py",
         ]
 
         return super().examine()
