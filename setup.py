@@ -8,7 +8,7 @@ with open("README.md", "r") as fh:
 setup(
     name="oopp",
     version="1.0.0",
-    description="A OOP Discuession",
+    description="A OOP Discussion",
     long_description=long_description,
     long_description_content_type="text/markdown",
     author="Ian Laird",

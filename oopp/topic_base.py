@@ -7,7 +7,7 @@ class PresentationTopic(ABC):
 
     Use OOP concepts to make this print strings in a few formats. 
     Assume the user will be able to select what output format as a
-    commandline argument.
+    command line argument.
 
     Hint: extract what changes, leave what doesn't
 

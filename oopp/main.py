@@ -15,7 +15,7 @@ class Presentation:
     thoughts and experiences. I would like to know your pain and successes.
 
     Really, I just want to nerd out about OOP. I hope to be able to leave hear with
-    a more complete picutre of OOP and share the knowledge I have with each of you.
+    a more complete picture of OOP and share the knowledge I have with each of you.
     """
 
     def examine(self):

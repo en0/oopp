@@ -8,7 +8,7 @@ class ShowMeWhatYouMean(PresentationTopic):
 
     I have some examples i would like to share with you.
     While looking at these, think about how complexity is managed. How might the code
-    grow over time? Does it provide a simple enough pattern to evolve in a perdictable
+    grow over time? Does it provide a simple enough pattern to evolve in a predictable
     way in a large team?
 
     Ask questions, offer alternatives, tell me i spelled things wrong.

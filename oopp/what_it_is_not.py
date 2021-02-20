@@ -5,7 +5,7 @@ from .exceptions import NotRealOopException
 
 
 class WhatItIsNot(PresentationTopic):
-    """Dont get hung up on the wrong thing.
+    """Don't get hung up on the wrong thing.
 
     The point is to control complexity, not to follow rules.
     The rules are given to keep the car between the lines, not

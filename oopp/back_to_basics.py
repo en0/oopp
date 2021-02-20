@@ -6,7 +6,7 @@ from .topic_base import PresentationTopic
 class BackToBasics(PresentationTopic):
     """What problems does OOP solve?
 
-    OOP does have a reason to exist behond just giving us rules.
+    OOP does have a reason to exist beyond just giving us rules.
 
     In "The Elements of Computing Systems: Building a Modern Computer from First Principles"
     the authors, Noam Nisan ans Shimon Schacken, focus a lot on the abstraction/implementation

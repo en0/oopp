@@ -53,7 +53,7 @@ ENDPROC(_start)
 GLOBAL(die)
     ## Either the system is not multiboot compliant or sysinit
     ## returned - Either way, we cannot do anything. System is dead.
-    cli                     ## Stop all hardware interupts
+    cli                     ## Stop all hardware interrupts
     hlt                     ## Halt the CPU
     jmp die                 ## Infinite loop
 ENDPROC(die)
