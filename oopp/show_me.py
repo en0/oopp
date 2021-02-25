@@ -36,6 +36,7 @@ class ShowMeWhatYouMean(PresentationTopic):
             "examples/log.h"
             "examples/log.c"
             "examples/serial_8250.h"
+            "examples/main.c"
             "oopp/topic_base.py",
         ]
 
