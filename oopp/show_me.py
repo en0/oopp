@@ -33,9 +33,9 @@ class ShowMeWhatYouMean(PresentationTopic):
 
         self.examples = [
             "examples/boot_loader.S",
-            "examples/log/rpos/log.h"
-            "examples/log/arch/serial.h"
-            "examples/log/arch/serial_8250.h"
+            "examples/log.h"
+            "examples/log.c"
+            "examples/serial_8250.h"
             "oopp/topic_base.py",
         ]
 
