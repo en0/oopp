@@ -30,6 +30,8 @@ class BackToBasics(PresentationTopic):
 
         self.answers = [
             # Lets talk about it.
+            "Isolate complexity through abstraction (simplification)",
+            "YAGNI",
         ]
 
         return super().examine()

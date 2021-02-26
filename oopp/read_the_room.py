@@ -19,6 +19,11 @@ class ReadTheRoom(PresentationTopic):
 
         self.answers = [
             # Lets talk about it.
+            "How it's taught.",
+            "It's not functional programming.",
+            "People add uneeded complexity...",
+            "Knowing how to break apart objects.",
+            "It's hard to know the abstraction before you start.",
         ]
 
         return super().examine()

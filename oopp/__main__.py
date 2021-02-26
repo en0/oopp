@@ -6,6 +6,7 @@ from .back_to_basics import BackToBasics
 from .what_it_is_not import WhatItIsNot
 from .show_me import ShowMeWhatYouMean
 from .learn_more import HowCanILearnMore
+from .topic_base import PresentationTopic, HTMLFormatter
 
 
 class Presentation:
@@ -22,7 +23,10 @@ class Presentation:
         self._parts.examine()
 
     def __init__(self):
-        # To keep things moving, this is a list of things to discuess
+        # To keep things moving, this is a list of things to discuss
+
+        #PresentationTopic.formatter = HTMLFormatter()
+
         self._parts = reduce(lambda a, b: b(a), reversed([
             ReadTheRoom,
             BackToBasics,
