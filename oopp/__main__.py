@@ -6,7 +6,7 @@ from .back_to_basics import BackToBasics
 from .what_it_is_not import WhatItIsNot
 from .show_me import ShowMeWhatYouMean
 from .learn_more import HowCanILearnMore
-from .topic_base import PresentationTopic, HTMLFormatter
+from .topic_base import PresentationTopic, HTMLFormatter, Formatter
 
 
 class Presentation:
@@ -20,12 +20,14 @@ class Presentation:
     """
 
     def examine(self):
+        self._formatter.open()
         self._parts.examine()
+        self._formatter.close()
 
-    def __init__(self):
-        # To keep things moving, this is a list of things to discuss
+    def __init__(self, formatter: Formatter):
 
-        #PresentationTopic.formatter = HTMLFormatter()
+        self._formatter = formatter
+        PresentationTopic.formatter = formatter
 
         self._parts = reduce(lambda a, b: b(a), reversed([
             ReadTheRoom,
@@ -37,6 +39,7 @@ class Presentation:
 
 
 if __name__ == "__main__":
-    pres = Presentation()
+    html_formatter = HTMLFormatter()
+    pres = Presentation(html_formatter)
     pres.examine()
 

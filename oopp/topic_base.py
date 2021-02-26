@@ -4,16 +4,37 @@ import textwrap
 
 class Formatter(ABC):
     @abstractmethod
+    def open(self):
+        ...
+
+    @abstractmethod
+    def close(self):
+        ...
+
+    @abstractmethod
     def render(self, topic: "PresentationTopic"):
         ...
 
 class MarkDownFormatter(Formatter):
+    def open(self):
+        ...
+
+    def close(self):
+        ...
+
     def render(self, topic: "PresentationTopic"):
         print(f"## {topic.__class__.__name__}\n")
         print(topic._format_doc())
         print("")
 
 class HTMLFormatter(Formatter):
+
+    def open(self):
+        print("<html><body>")
+
+    def close(self):
+        print("</body></html>")
+
     def render(self, topic: "PresentationTopic"):
         print(f"<b>{topic.__class__.__name__}</b>\n")
         print("<p>" + topic._format_doc() + "</p>")
